@@ -1,0 +1,250 @@
+/* 배너 */
+.admin-banner {
+  background: #ffa968;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+.admin-banner h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.admin-banner p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.tab-btn {
+  padding: 10px 48px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab-btn.active,
+.tab-btn:hover {
+  background: white;
+  color: #ffa968;
+}
+
+/* 등록/수정 폼 */
+.form-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+.form-section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #50392a;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.form-section p {
+  font-size: 16px;
+  color: #7a5b47;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #50392a;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ffd4b4;
+  border-radius: 6px;
+  width: 100%;
+}
+.form-group input:focus {
+  border-color: #ffa968;
+
+  outline: none;
+}
+.image-input-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.image-fake-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ffd8a8;
+  border-radius: 6px;
+  background-color: white;
+  color: #999;
+  font-size: 14px;
+}
+
+.image-upload-btn {
+  padding: 10px 20px;
+  background-color: #ffa968;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.category-select {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.category-select button {
+  padding: 6px 16px;
+  border: 1px solid #ffa968;
+  background: #fffefb;
+  color: #ffa968;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-select button.active,
+.category-select button:hover {
+  background: #ffa968;
+  color: white;
+}
+.submit-btn,
+.update-btn {
+  margin-top: 40px;
+  background-color: #ffa968;
+  color: white;
+  padding: 12px 80px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 카드 목록 */
+.product-list-section h3 {
+  margin-top: 160px;
+  font-size: 26px;
+  text-align: center;
+  color: #50392a;
+  margin-bottom: 8px;
+}
+.product-list-section p {
+  font-size: 16px;
+  text-align: center;
+  color: #7a5b47;
+  margin-bottom: 24px;
+}
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.product-card {
+  flex: 0 0 280px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 15px;
+  background: #fff9f2;
+  box-shadow: 0 4px 20px rgba(187, 141, 108, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(187, 141, 108, 0.15);
+}
+.product-card.active {
+  border: 2px solid #ffa968;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.product-card h4 {
+  font-size: 20px;
+  color: #7a5b47;
+  font-weight: 600;
+  margin: 0;
+}
+.product-card p {
+  font-size: 16px;
+  color: #7a5b47;
+  margin: 0 4px;
+}
+.manage-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.delete-btn,
+.edit-btn {
+  padding: 10px 48px;
+  border: 1px solid #ffa968;
+  background: #ffa968;
+  color: #fff9f2;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.delete-btn:hover,
+.edit-btn:hover {
+  background: #fff9f2;
+  color: #ffa968;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 반응형 */
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-card {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+  .category-select {
+    flex-wrap: wrap;
+  }
+}

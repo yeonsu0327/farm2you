@@ -1,0 +1,163 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>상품 수정 - Farm2You</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/edit.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- 햄버거 메뉴 -->
+    <nav class="hamburger-menu" id="hamburger-menu">
+      <div class="menu-header">
+        <button id="menu-close" class="close-btn">
+          <img src="image/icon-close.svg" alt="close" />
+        </button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="market.html">농작물 마켓</a></li>
+        <li><a href="contact.html">문의하기</a></li>
+        <li><a href="create.html">상품 등록 및 수정</a></li>
+      </ul>
+      <div class="menu-footer">
+        <button class="signout-btn">SIGN OUT</button>
+      </div>
+    </nav>
+
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-icon left" id="menu-toggle">
+          <img src="image/icon-menu.svg" alt="menu" />
+        </div>
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="image/logo.svg" alt="FARM2YOU" />
+          </a>
+        </div>
+        <div class="header-icon right">
+          <a href="cart.html">
+            <img src="image/icon-cart.svg" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 배너 -->
+    <section class="admin-banner">
+      <h2>상품 수정</h2>
+      <p>기존 농작물을 수정하거나 삭제하세요.</p>
+      <div class="admin-buttons">
+        <button onclick="location.href='create.html'" class="tab-btn">
+          등록하기
+        </button>
+        <button onclick="location.href='edit.html'" class="tab-btn active">
+          수정하기
+        </button>
+      </div>
+    </section>
+
+    <!-- 수정 목록 -->
+    <section class="product-list-section" id="manage-section">
+      <h3>내 등록 농작물</h3>
+      <p>수정 및 삭제할 농작물을 선택하세요.</p>
+      <div class="manage-actions">
+        <button class="delete-btn">삭제하기</button>
+        <button class="edit-btn">수정하기</button>
+      </div>
+      <div class="product-cards" id="product-cards"></div>
+      <p
+        id="empty-message"
+        style="text-align: center; color: gray; display: none"
+      >
+        등록된 상품이 없습니다.
+      </p>
+    </section>
+
+    <!-- 수정 폼 -->
+    <section class="form-section" id="edit-form" style="display: none">
+      <h3>농작물 정보 수정</h3>
+      <p style="margin-bottom: 30px; color: #7a5b47; font-size: 16px">
+        선택한 농작물의 정보를 수정하세요.
+      </p>
+      <form>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="edit-name">농작물 이름</label>
+            <input type="text" id="edit-name" placeholder="예) 사과 500g" />
+          </div>
+          <div class="form-group">
+            <label for="edit-price">가격</label>
+            <input type="text" id="edit-price" placeholder="예) 3000" />
+          </div>
+
+          <div class="form-group">
+            <label for="edit-region">생산지</label>
+            <input type="text" id="edit-region" placeholder="예) 전라북도" />
+          </div>
+          <div class="form-group">
+            <label for="edit-date">생산 연월</label>
+            <input type="date" id="edit-date" />
+          </div>
+
+          <div class="form-group image-upload">
+            <label for="edit-image">이미지</label>
+            <div class="image-input-wrapper">
+              <input
+                type="text"
+                id="image-filename"
+                class="image-fake-input"
+                placeholder="이미지를 업로드해 주세요."
+                readonly
+              />
+              <label for="edit-image" class="image-upload-btn">파일 선택</label>
+              <input type="file" id="edit-image" accept="image/*" hidden />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="edit-weight">중량</label>
+            <input type="text" id="edit-weight" placeholder="예) 500g" />
+          </div>
+
+          <div class="form-group">
+            <label>농작물 종류</label>
+            <div class="category-select">
+              <button type="button" id="cat-veg">채소</button>
+              <button type="button" id="cat-fruit">과일</button>
+              <button type="button" id="cat-grain">곡물</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit-description">설명</label>
+            <input
+              type="text"
+              id="edit-description"
+              placeholder="간단한 설명을 입력하세요."
+            />
+          </div>
+        </div>
+
+        <button class="update-btn" type="submit">수정하기</button>
+      </form>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <img src="image/logo.svg" alt="logo" class="footer-logo" />
+        <div class="footer-links">
+          <span>문의: admin@farm2you.com</span>
+          <a href="privacy.html">개인정보처리방침</a>
+          <a href="terms.html">이용약관</a>
+          <span>저작권 © 2025 농작물 쇼핑</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

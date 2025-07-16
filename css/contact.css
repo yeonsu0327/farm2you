@@ -1,0 +1,122 @@
+.farm-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 80px;
+}
+
+.farm-section h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  color: #50392a;
+  text-align: center;
+}
+
+.farm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.farm-card {
+  background-color: #fff9f2;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(187, 141, 108, 0.2);
+  padding: 16px;
+  transition: transform 0.2s ease;
+}
+
+.farm-card:hover {
+  transform: translateY(-4px);
+}
+
+.farm-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.farm-card .farm-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.farm-card h3 {
+  font-size: 16px;
+  color: #50392a;
+  margin: 0;
+}
+
+.inquire-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid #ffa968;
+  border-radius: 8px;
+  background: #fff9f2;
+  color: #ffa968;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.inquire-btn:hover {
+  background-color: #ffdcc2;
+  color: #ffa968;
+}
+
+/* 하단 배너 */
+.contact-banner {
+  background-color: #ffa968;
+  padding: 60px 20px;
+  color: #fff9f2;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact-text {
+  text-align: left;
+  flex: 1;
+}
+
+.contact-text h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.contact-text p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.contact-btn {
+  padding: 12px 24px;
+
+  font-size: 15px;
+  width: 180px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: #fff9f2;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: #ffa968;
+}

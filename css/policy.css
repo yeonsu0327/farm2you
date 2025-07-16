@@ -1,0 +1,30 @@
+.policy-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: #50392a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.policy-section h3 {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b2e2b;
+}
+
+.policy-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.policy-section p {
+  margin-bottom: 12px;
+}
+.policy-box {
+  background-color: #fff9f2;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(187, 141, 108, 0.1);
+}

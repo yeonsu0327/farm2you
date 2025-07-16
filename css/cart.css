@@ -1,0 +1,112 @@
+.cart-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fffaf2;
+}
+
+.cart-section h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #50392a;
+  margin-bottom: 30px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fffefb;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.cart-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-info {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 6px;
+  color: #50392a;
+}
+
+.cart-info .price {
+  font-size: 15px;
+  color: #7a5b47;
+  margin-bottom: 6px;
+}
+
+.cart-info .total {
+  font-size: 15px;
+  color: #50392a;
+  margin-top: 4px;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: auto;
+  gap: 10px;
+}
+
+.qty-btn {
+  background-color: #ffa968;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #50392a;
+}
+
+/* X 버튼 상단 우측 */
+.delete-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.delete-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #50392a;
+  margin-top: 30px;
+}

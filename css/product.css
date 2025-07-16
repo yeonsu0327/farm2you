@@ -1,0 +1,158 @@
+.product-main {
+  background-color: #ffead9;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-hero {
+  background-color: #ffead9;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.product-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(187, 141, 108, 0.1);
+  background-color: #fff9f2;
+  padding: 16px;
+}
+
+.product-info h1 {
+  font-size: 28px;
+  color: #50392a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.product-info p {
+  font-size: 16px;
+  color: #7a5b47;
+  margin-bottom: 30px;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.buy-btn,
+.cart-btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 200px;
+
+  background-color: #ffa968;
+  color: #fff9f2;
+  border: 1px solid #ffa968;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover,
+.cart-btn:hover {
+  background-color: #ff944d;
+}
+
+/* 상세 정보 영역 */
+.product-detail {
+  padding: 80px 60px 100px;
+  text-align: center;
+  background-color: #fffaf2;
+}
+
+.product-detail h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #50392a;
+  margin-bottom: 8px;
+}
+
+.product-detail > p {
+  color: #7a5b47;
+  margin-bottom: 60px;
+}
+
+.detail-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto 100px;
+}
+
+.card {
+  padding: 16px;
+  gap: 20px;
+  border-radius: 12px;
+  background-color: #fffcf9;
+  box-shadow: 0px 0px 20px 0px rgba(187, 141, 108, 0.2);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.card-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #50392a;
+  margin: 0 0 6px;
+}
+
+.card-text p {
+  font-size: 14px;
+  color: #7a5b47;
+  margin: 0;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .detail-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .product-info {
+    align-items: center;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buy-btn,
+  .cart-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>장바구니 - Farm2You</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- 햄버거 메뉴 -->
+    <nav class="hamburger-menu" id="hamburger-menu">
+      <div class="menu-header">
+        <button id="menu-close" class="close-btn">
+          <img src="image/icon-close.svg" alt="close" />
+        </button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="market.html">농작물 마켓</a></li>
+        <li><a href="contact.html">문의하기</a></li>
+        <li><a href="create.html">상품 등록 및 수정</a></li>
+      </ul>
+      <div class="menu-footer">
+        <button class="signout-btn">SIGN OUT</button>
+      </div>
+    </nav>
+
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-icon left" id="menu-toggle">
+          <img src="image/icon-menu.svg" alt="menu" />
+        </div>
+        <div class="header-logo">
+          <a href="index.html"><img src="image/logo.svg" alt="FARM2YOU" /></a>
+        </div>
+        <div class="header-icon right">
+          <a href="cart.html">
+            <img src="image/icon-cart.svg" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="cart-section">
+      <h1>장바구니</h1>
+      <p>담긴 상품이 없습니다.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <img src="image/logo.svg" alt="logo" class="footer-logo" />
+        <div class="footer-links">
+          <span>문의: admin@farm2you.com</span>
+          <a href="privacy.html">개인정보처리방침</a>
+          <a href="terms.html">이용약관</a>
+          <span>저작권 © 2025 FARM2YOU</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

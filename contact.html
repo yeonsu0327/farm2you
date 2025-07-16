@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>문의하기 - Farm2You</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- 햄버거 메뉴 -->
+    <nav class="hamburger-menu" id="hamburger-menu">
+      <div class="menu-header">
+        <button id="menu-close" class="close-btn">
+          <img src="image/icon-close.svg" alt="close" />
+        </button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="market.html">농작물 마켓</a></li>
+        <li><a href="contact.html">문의하기</a></li>
+        <li><a href="create.html">상품 등록 및 수정</a></li>
+      </ul>
+      <div class="menu-footer">
+        <button class="signout-btn">SIGN OUT</button>
+      </div>
+    </nav>
+
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-icon left" id="menu-toggle">
+          <img src="image/icon-menu.svg" alt="menu" />
+        </div>
+        <div class="header-logo">
+          <a href="index.html"><img src="image/logo.svg" alt="FARM2YOU" /></a>
+        </div>
+        <div class="header-icon right">
+          <a href="cart.html"><img src="image/icon-cart.svg" alt="cart" /></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 농장 리스트 -->
+    <main class="farm-section">
+      <h2>농장 리스트</h2>
+      <div class="farm-grid">
+        <!-- 카드 반복 -->
+        <div class="farm-card">
+          <img src="image/Happy Farm.svg" alt="행복 농장" />
+          <div class="farm-info">
+            <h3>행복 농장</h3>
+            <a class="inquire-btn" href="mailto:happyfarm@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Golden Field Farm.svg" alt="황금 농장" />
+          <div class="farm-info">
+            <h3>황금 농장</h3>
+            <a class="inquire-btn" href="mailto:goldenfarm@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Fragrant Harvest.svg" alt="향긋한 농산물" />
+          <div class="farm-info">
+            <h3>향긋한 농산물</h3>
+            <a class="inquire-btn" href="mailto:fragrant@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Uncle’s Fresh Farm.svg" alt="싱싱한 삼촌네" />
+          <div class="farm-info">
+            <h3>싱싱한 삼촌네</h3>
+            <a class="inquire-btn" href="mailto:unclefarm@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Farmniss.svg" alt="팜니스" />
+          <div class="farm-info">
+            <h3>팜니스</h3>
+            <a class="inquire-btn" href="mailto:farmniss@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Sweetest Yam Farm.svg" alt="최고구마" />
+          <div class="farm-info">
+            <h3>최고구마</h3>
+            <a class="inquire-btn" href="mailto:yambest@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Auntie’s Fresh Garden.svg" alt="싱싱한 이모네" />
+          <div class="farm-info">
+            <h3>싱싱한 이모네</h3>
+            <a class="inquire-btn" href="mailto:auntiefresh@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Plumville.svg" alt="자두네" />
+          <div class="farm-info">
+            <h3>자두네</h3>
+            <a class="inquire-btn" href="mailto:plumville@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="farm-card">
+          <img src="image/Harmony Cooperative Farm.svg" alt="협동 농장" />
+          <div class="farm-info">
+            <h3>협동 농장</h3>
+            <a class="inquire-btn" href="mailto:harmony@duksung.ac.kr"
+              >문의하기</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 하단 문의 배너 -->
+    <section class="contact-banner">
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2>문의하기</h2>
+          <p>Farm2You에 문의해 주세요.</p>
+        </div>
+        <a href="mailto:admin@farm2you.com" class="contact-btn">문의하기</a>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <img src="./image/logo.svg" alt="logo" class="footer-logo" />
+        <div class="footer-links">
+          <span>문의: admin@farm2you.com</span>
+          <a href="privacy.html">개인정보처리방침</a>
+          <a href="terms.html">이용약관</a>
+          <span>저작권 © 2025 농작물 쇼핑</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+/* 필터 버튼 */
+.filter-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.btn-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 80px;
+  height: 90px;
+  padding: 10px;
+  border: 2px solid #ffa968;
+  background-color: transparent;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffa968;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.btn-filter img {
+  width: 24px;
+  height: 24px;
+}
+.btn-filter.active {
+  background-color: #ffa968;
+  color: #fffaf5;
+}
+.btn-filter.active img {
+  filter: brightness(0) invert(1);
+}
+.btn-filter:hover {
+  background-color: #ffe3cc;
+}
